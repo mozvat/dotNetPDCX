@@ -3,3 +3,10 @@ c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\PD
 c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\PDCX.Properties.Resources.resources
 c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\GenerateResource.read.1.tlog
 c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\Interop.DSIPDCXLib.dll
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\PDCX.csproj.ResolveComReference.cache
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\bin\Debug\PDCX.exe.config
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\bin\Debug\PDCX.exe
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\bin\Debug\PDCX.pdb
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\PDCX.exe
+c:\users\mozvat\documents\visual studio 2010\Projects\PDCX\PDCX\obj\x86\Debug\PDCX.pdb

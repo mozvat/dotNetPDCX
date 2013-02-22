@@ -14,12 +14,15 @@ namespace PDCX
         public frmMain()
         {
             InitializeComponent();
-            //Initialize SecureDevice
         }
 
         private void btnCredit_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
         }
     }
 }

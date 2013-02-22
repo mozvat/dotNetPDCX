@@ -8,13 +8,13 @@ namespace PDCX
 {
     public static class Initialize
     {
-        public static StringBuilder GenerateXML(string terminalID, string comPort)
+        public static string GenerateXML()
         {
             StringBuilder builder = new StringBuilder();
             builder.Append("<?xml version=\"" + "1.0\"?>");
             builder.Append("<TStream>");
             builder.Append("<Admin>");
-            builder.Append("<MerchantID>" + terminalID + "</MerchantID>");
+            builder.Append("<MerchantID>" + TerminalID.GetConfig() + "</MerchantID>");
             builder.Append("<TranType>SecureDeviceInit</TranType>");
             builder.Append("<TranCode>" + TranCode.SECURE_DEVICE_INIT + " </TranCode>");
             builder.Append("<TranType>" + TranType.SETUP + " </TranType>");
@@ -23,7 +23,7 @@ namespace PDCX
             builder.Append("<ComPort>" + ComPort.GetConfig() + "</ComPort>");
             builder.Append("</Admin>");
             builder.Append("</TStream>");
-            return builder;
+            return builder.ToString();
         }
     }
 }
