@@ -2,6 +2,9 @@
 
 namespace PDCX
 {
+    public enum ProcessControl { VisibleDialogBoxes = 0, NoDialogBoxes = 1 }
+
+
     public static class TerminalID
     {
         public static string GetConfig()

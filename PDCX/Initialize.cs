@@ -15,10 +15,9 @@ namespace PDCX
             builder.Append("<TStream>");
             builder.Append("<Admin>");
             builder.Append("<MerchantID>" + TerminalID.GetConfig() + "</MerchantID>");
-            builder.Append("<TranType>SecureDeviceInit</TranType>");
-            builder.Append("<TranCode>" + TranCode.SECURE_DEVICE_INIT + " </TranCode>");
-            builder.Append("<TranType>" + TranType.SETUP + " </TranType>");
-            builder.Append("<PadType>" + PadType.GetConfig() + " </PadType>");
+            builder.Append("<TranCode>" + TranCode.SECURE_DEVICE_INIT + "</TranCode>");
+            builder.Append("<TranType>" + TranType.SETUP + "</TranType>");
+            builder.Append("<PadType>" + PadType.GetConfig() + "</PadType>");
             builder.Append("<SecureDevice>" + SecureDevice.GetConfig() + "</SecureDevice>");
             builder.Append("<ComPort>" + ComPort.GetConfig() + "</ComPort>");
             builder.Append("</Admin>");

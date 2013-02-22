@@ -18,7 +18,7 @@ namespace PDCX
 
         private void btnCredit_Click(object sender, EventArgs e)
         {
-
+            DSIPDCXWrapper.Instance.Debug = true ;
         }
 
         private void frmMain_Load(object sender, EventArgs e)

@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration.cs" />
-    <Compile Include="DSIPDCX.cs" />
+    <Compile Include="DSIPDCX.Wrapper.cs" />
     <Compile Include="SwipedCredit.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
