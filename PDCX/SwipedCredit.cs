@@ -29,8 +29,8 @@ namespace PDCX
             builder.Append("<InvoiceNo>" + invoiceNumber + "</InvoiceNo>");
             builder.Append("<RefNo>" + invoiceNumber + "</RefNo>");
             builder.Append("<Account>");
-            builder.Append("<AcctNo>Prompt</AcctNo>");
-            //builder.Append("<AcctNo>SecureDevice</AcctNo>");
+            //builder.Append("<AcctNo>Prompt</AcctNo>");
+            builder.Append("<AcctNo>SecureDevice</AcctNo>");
             builder.Append("</Account>");
             builder.Append("<Amount>");
             builder.Append("<Purchase>" + amount + "</Purchase>");
