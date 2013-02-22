@@ -1,4 +1,4 @@
-A DataCap's dsiPDCX wrapper written in C# 
+A C# wrapper for DataCap's dsiPDCX 
 =========================================
 
 DataCap provides many easy to integrate products to help build your Point of Sale System.
