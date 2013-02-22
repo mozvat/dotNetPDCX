@@ -18,7 +18,7 @@ namespace PDCX
 
         private void btnCredit_Click(object sender, EventArgs e)
         {
-            DSIPDCXWrapper.Instance.Debug = true ;
+            string response2 = DSIPDCXWrapper.Instance.Class.ProcessTransaction(Credit.SwipedSaleXML(txtAmount.Text, "1235", "5555").ToString(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);
         }
 
         private void frmMain_Load(object sender, EventArgs e)

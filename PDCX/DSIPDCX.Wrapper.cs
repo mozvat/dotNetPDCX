@@ -44,10 +44,7 @@ namespace PDCX
             Class.ServerIPConfig(EndPoint, (short)ProcessControl.NoDialogBoxes);
             Class.SetConnectTimeout(10);
             Class.SetResponseTimeout(60);
-            //Class.ProcessTransaction(Initialize.GenerateXML(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);
-
-            string response2 = Class.ProcessTransaction(Credit.SwipedSaleXML("10.33", "1235", "5555").ToString(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);
-
+            Class.ProcessTransaction(Initialize.GenerateXML(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);
         }
 
         public static DSIPDCXWrapper Instance
