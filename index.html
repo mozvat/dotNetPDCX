@@ -60,16 +60,21 @@
 <p>1) Set the IPs
 2) Set the timeouts.
 3) Pass in the device initialize XML to the ProcessTransation() method.
-<a href="http://www.flickr.com/photos/93494504@N04/8501070566/" title="Initialize by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8247/8501070566_5e347eeaa2.jpg" width="500" height="213" alt="Initialize"></a></p>
+<a href="http://www.flickr.com/photos/93494504@N04/8499964787/" title="dsiPDCXPW by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8089/8499964787_800cc8e210.jpg" width="500" height="137" alt="dsiPDCXPW"></a></p>
 
 <p>Here is the Device Initialization XML
-<a href="http://www.flickr.com/photos/93494504@N04/8500068147/" title="Initialize by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8248/8500068147_b5021465e2.jpg" width="500" height="213" alt="Initialize"></a>
-The examples are referencing my app-config file.
-<img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGMVZQc3RkeGE2dkU/edit?usp=sharing" alt="AppConfig"></p>
+<a href="http://www.flickr.com/photos/93494504@N04/8500068147/" title="Initialize by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8248/8500068147_b5021465e2.jpg" width="500" height="213" alt="Initialize"></a></p>
+
+<p>The examples are referencing my app-config file.
+<a href="http://www.flickr.com/photos/93494504@N04/8499965051/" title="appconfig by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8512/8499965051_d3f92e9545.jpg" width="500" height="477" alt="appconfig"></a></p>
 
 <p>After this setup. Make your basic credit call.</p>
 
 <p>string response2 = DSIPDCXWrapper.Instance.Class.ProcessTransaction(Credit.SwipedSaleXML(txtAmount.Text, "1235", "5555").ToString(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);</p>
+
+<p>Here is the Credit Card XML to pass into ProcessTransaction(). If you are familiar with DSIClientX.ocx, there are some minor differences between dsiPDCX.ocx.  But minimal changed are required if you are already integrated to DSIClientX.</p>
+
+<p><a href="http://www.flickr.com/photos/93494504@N04/8501070762/" title="dsiPDCXCode by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8230/8501070762_b68cf83529.jpg" width="500" height="244" alt="dsiPDCXCode"></a></p>
 
 <h3>Manual entry of credit card data</h3>
 
@@ -78,6 +83,8 @@ The examples are referencing my app-config file.
 <p><a href="http://www.flickr.com/photos/93494504@N04/8499964973/" title="ipad by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8376/8499964973_44852069ab.jpg" width="281" height="500" alt="ipad"></a></p>
 
 <p>(**Disclaimer** The credit card number on a screen is a test number)</p>
+
+<p>If you need any help or want to contribute to this open-source SDK, feel free to email me at <a href="mailto:mozvat@mercurypay.com">mozvat@mercurypay.com</a></p>
       </section>
     </div>
 
