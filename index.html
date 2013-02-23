@@ -33,19 +33,19 @@
       <section id="main_content" class="inner">
         <h3>Welcome to the C# dsiPDCX sdk.</h3>
 
-<p>This is a basic integration demonstrating how to initialize and perform a basic credit sale utilizing the out-of-scope solution dsiPDCX from DataCap. <a href="http://www.datacapsystems.com/">http://www.datacapsystems.com/</a>  I integrated using a MagTek IPad.</p>
+<p>This is a basic integration demonstrating how to initialize and perform a basic swiped credit sale utilizing the out-of-scope solution dsiPDCX from DataCap. <a href="http://www.datacapsystems.com/">http://www.datacapsystems.com/</a>  This example is configured to use the MagTek IPad.</p>
 
 <h3>Basic overview</h3>
 
 <p>The DataCap dsiPDCX can be downloaded at: <a href="http://www.datacapepay.com/dsipdcx.htm">http://www.datacapepay.com/dsipdcx.htm</a></p>
 
-<p>Below is the basic dataflow. Notice the communication of sensitive card data is contained within the dsiPDCX and the peripheral device. The dsiPDCX communicates with an in-store light-weight 'In Store NetEpay' server. This server communicates with Mercury Payment Systems, (Or other payment processors).  The POS software interacts only with the dsiPDCX to get the results from the credit card processor. </p>
+<p>Below is the basic dataflow. Notice the communication of sensitive card data is contained within the dsiPDCX and the peripheral device. The dsiPDCX communicates with the light-weight 'In Store NetEpay' server. This server communicates with Mercury Payment Systems, (Or other payment processors). Your POS software interacts only with the dsiPDCX obtaining the results from the credit card processor. </p>
 
 <p><a href="http://www.flickr.com/photos/93494504@N04/8499964915/" title="DataFlow by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8508/8499964915_76f32699a2.jpg" width="500" height="250" alt="DataFlow"></a></p>
 
 <h3>Supported Devices</h3>
 
-<p>The dsiPDCX communicates with a fairly large number of devices. Request from DataCap an integration guide to get the latest supported devices. Below shows this list of devices.</p>
+<p>The dsiPDCX communicates with a variety of peripherals that accept a credit card swipe or manual entry. To get a list of the latest supported devices, request an integration guide from DataCap. Below shows a list of devices.</p>
 
 <p><a href="http://www.flickr.com/photos/93494504@N04/8499965075/" title="listofDevices1 by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8371/8499965075_7e88c4954f.jpg" width="500" height="332" alt="listofDevices1"></a></p>
 
@@ -72,9 +72,9 @@
 
 <p>string response2 = DSIPDCXWrapper.Instance.Class.ProcessTransaction(Credit.SwipedSaleXML(txtAmount.Text, "1235", "5555").ToString(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);</p>
 
-<p>Here is the Credit Card XML to pass into ProcessTransaction(). If you are familiar with DSIClientX.ocx, there are some minor differences between dsiPDCX.ocx.  But minimal changed are required if you are already integrated to DSIClientX.</p>
+<p>Here is the SwipedCreditSale XML to pass into ProcessTransaction(). If you are familiar with DSIClientX.ocx, there are some minor differences between dsiPDCX.ocx.  But minimal changed are required if you are already integrated to DSIClientX.</p>
 
-<p><a href="http://www.flickr.com/photos/93494504@N04/8501070762/" title="dsiPDCXCode by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8230/8501070762_b68cf83529.jpg" width="500" height="244" alt="dsiPDCXCode"></a></p>
+<p><a href="http://www.flickr.com/photos/93494504@N04/8501070762/" title="dsiPDCXCode by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8230/8501070762_b68cf83529_c.jpg" width="640" height="313" alt="dsiPDCXCode"></a></p>
 
 <h3>Manual entry of credit card data</h3>
 
