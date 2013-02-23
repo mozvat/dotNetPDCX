@@ -55,15 +55,15 @@
 
 <p>First, you have to reference the dsiPDCX.ocx within your project. Then perform a couple of initialization steps.</p>
 
-<p>Notice you set the IPs, this includes a back-up IP. TakeNote: dsiPDCX can be configured to communicate with the 'In-Store NetEPay' or directly to Mercury's NetEPay server.</p>
+<p>Notice you set the ServerIPConfig, this includes a back-up IP. TakeNote: dsiPDCX can be configured to communicate with the 'In-Store NetEPay' or directly to Mercury's NetEPay server. (Going directly to Mercury's NetEPay will require you handle your own logging and user-management of your POS)</p>
 
-<p>1) Set the IPs
-2) Set the timeouts.
+<p>1) Set the IPs. Call ServerIPConfig()
+2) Set the timeouts. SetConnectionTimeOut(), SetResponseTimeOut()
 3) Pass in the device initialize XML to the ProcessTransation() method.
-<a href="http://www.flickr.com/photos/93494504@N04/8499964787/" title="dsiPDCXPW by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8089/8499964787_800cc8e210.jpg" width="500" height="137" alt="dsiPDCXPW"></a></p>
+<a href="http://www.flickr.com/photos/93494504@N04/8499964787/" title="dsiPDCXPW by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8089/8499964787_800cc8e210.jpg" width="640" height="175" alt="dsiPDCXPW"></a></p>
 
 <p>Here is the Device Initialization XML
-<a href="http://www.flickr.com/photos/93494504@N04/8500068147/" title="Initialize by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8248/8500068147_b5021465e2.jpg" width="500" height="213" alt="Initialize"></a></p>
+<a href="http://www.flickr.com/photos/93494504@N04/8500068147/" title="Initialize by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8248/8500068147_b5021465e2.jpg" width="640" height="273" alt="Initialize"></a></p>
 
 <p>The examples are referencing my app-config file.
 <a href="http://www.flickr.com/photos/93494504@N04/8499965051/" title="appconfig by mozvat, on Flickr"><img src="http://farm9.staticflickr.com/8512/8499965051_d3f92e9545.jpg" width="500" height="477" alt="appconfig"></a></p>
