@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dotnetpdcx : A C# example of integrating to the dsiPDCX" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dotnetpdcx</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mozvat/dotNetPDCX">View on GitHub</a>
+
+          <h1 id="project_title">Dotnetpdcx</h1>
+          <h2 id="project_tagline">A C# example of integrating to the dsiPDCX</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mozvat/dotNetPDCX/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mozvat/dotNetPDCX/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to the C# dsiPDCX sdk.</h3>
+
+<p>This is a basic integration demonstrating how to initialize and perform a basic credit sale utilizing the out-of-scope solution dsiPDCX from DataCap. <a href="http://www.datacapsystems.com/">http://www.datacapsystems.com/</a>  I integrated using a MagTek IPad.</p>
+
+<h3>Basic overview</h3>
+
+<p>The DataCap dsiPDCX can be downloaded at: <a href="http://www.datacapepay.com/dsipdcx.htm">http://www.datacapepay.com/dsipdcx.htm</a></p>
+
+<p>Below is the basic dataflow. Notice the communication of sensitive card data is contained within the dsiPDCX and the peripheral device. The dsiPDCX communicates with an in-store light-weight 'In Store NetEpay' server. This server communicates with Mercury Payment Systems, (Or other payment processors).  The POS software interacts only with the dsiPDCX to get the results from the credit card processor. </p>
+
+<p><img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGY1laTm9MRWM3Smc/edit?usp=sharing" alt="DataFlow"></p>
+
+<h3>Supported Devices</h3>
+
+<p>The dsiPDCX communicates with a fairly large number of devices. Request from DataCap an integration guide to get the latest supported devices. Below shows this list of devices.</p>
+
+<p><img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGb3UtbmxxX2ZhZnc/edit?usp=sharing" alt="List 1"><img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGeU9VT2JLY2czLUE/edit?usp=sharing" alt="List 2"></p>
+
+<h3>Basic Integration:</h3>
+
+<p>First, you have to reference the dsiPDCX.ocx within your project. Then perform a couple of initialization steps.</p>
+
+<p>Notice you set the IPs, this includes a back-up IP. TakeNote: dsiPDCX can be configured to communicate with the 'In-Store NetEPay' or directly to Mercury's NetEPay server.</p>
+
+<p>1) Set the IPs
+2) Set the timeouts.
+3) Pass in the device initialize XML to the ProcessTransation() method.
+<img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGeTVWUW5OMTVEMlU/edit?usp=sharing" alt="Initialize!"></p>
+
+<p>Here is the Device Initialization XML
+<img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGblktSkg4Z3JOanc/edit?usp=sharing" alt="Initialize Devie XML"></p>
+
+<p>The examples are referencing my app-config file.
+<img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGMVZQc3RkeGE2dkU/edit?usp=sharing" alt="AppConfig"></p>
+
+<p>After this setup. Make your basic credit call.</p>
+
+<p>string response2 = DSIPDCXWrapper.Instance.Class.ProcessTransaction(Credit.SwipedSaleXML(txtAmount.Text, "1235", "5555").ToString(), (short)ProcessControl.NoDialogBoxes, string.Empty, string.Empty);</p>
+
+<h3>Manual entry of credit card data</h3>
+
+<p>If the magstripe is damaged and unable to be read by a swipe. You can send a command to the IPAD to request manual entry of Credit Card information.</p>
+
+<p><img src="https://docs.google.com/file/d/0B-z9V7Y9VPEGT1p4TzQ2N1ZsZlU/edit?usp=sharing" alt="Manual entry"></p>
+
+<p>(**Disclaimer** The credit card number on a screen is a test number)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dotnetpdcx maintained by <a href="https://github.com/mozvat">mozvat</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
